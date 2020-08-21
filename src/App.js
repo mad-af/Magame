@@ -1,8 +1,8 @@
-import React from 'react';
-import Home from './components/layout/home.js';
+import React, { Component } from 'react';
+import Routes from './config/Routes';
 
-function App() {
-  return <Home/>
-}
-
-export default App;
+export default class App extends Component {
+  render() {
+    return <Routes />;
+  };
+};
