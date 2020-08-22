@@ -34,9 +34,9 @@ export default class Routes extends Component {
     _RenderApp() {
         return (
             <Switch>
-                <Redirect to="/" />
                 <Route exact path="/" component={pages.Home.Component} />
                 <Route exact path="/record" component={pages.Record.Component}/>
+                <Redirect to="/" />
             </Switch>
         );
     };
@@ -44,8 +44,8 @@ export default class Routes extends Component {
     _RenderGame() {
         return (
             <Switch>
-                <Redirect to="/game" />
                 <Route exact path="/game" component={pages.Game.Component} />
+                <Redirect to="/game" />
             </Switch>
         );
     };
@@ -53,8 +53,8 @@ export default class Routes extends Component {
     _RenderResult() {
         return (
             <Switch>
-                <Redirect to="/result" />
                 <Route exact path="/result" component={pages.Result.Component} />
+                <Redirect to="/result" />
             </Switch>
         );
     };

@@ -1,10 +1,12 @@
-import React from "react";
+import React, { Component } from "react";
 import Home from "../../components/layout/home";
 
-const component = () => {
-    return (
-        <Home />
-    );
+class component extends Component {
+    render(){
+        return(
+            <Home />
+        );
+    };
 };
 
 export default component;
