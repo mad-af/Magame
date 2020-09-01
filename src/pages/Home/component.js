@@ -1,10 +1,14 @@
 import React, { Component } from "react";
-import Home from "../../components/layout/home";
+import Navbar from "../../components/element/Navbar/component";
+import Particles from "../../components/element/Particles/component";
 
 class component extends Component {
     render(){
         return(
-            <Home />
+            <div>
+                <Navbar />
+                <Particles />
+            </div>
         );
     };
 };
