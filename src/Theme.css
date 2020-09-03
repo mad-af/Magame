@@ -8,5 +8,13 @@
 
 body {
   overflow: hidden;
-  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  background: rgba(0,11,26,1);
+  background: -moz-linear-gradient(top, rgba(0,11,26,1) 0%, rgba(0,24,46,1) 40%, rgba(0,38,77,1) 80%, rgba(0,56,112,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,11,26,1)), color-stop(40%, rgba(0,24,46,1)), color-stop(80%, rgba(0,38,77,1)), color-stop(100%, rgba(0,56,112,1)));
+  background: -webkit-linear-gradient(top, rgba(0,11,26,1) 0%, rgba(0,24,46,1) 40%, rgba(0,38,77,1) 80%, rgba(0,56,112,1) 100%);
+  background: -o-linear-gradient(top, rgba(0,11,26,1) 0%, rgba(0,24,46,1) 40%, rgba(0,38,77,1) 80%, rgba(0,56,112,1) 100%);
+  background: -ms-linear-gradient(top, rgba(0,11,26,1) 0%, rgba(0,24,46,1) 40%, rgba(0,38,77,1) 80%, rgba(0,56,112,1) 100%);
+  background: linear-gradient(to bottom, rgba(0,11,26,1) 0%, rgba(0,24,46,1) 40%, rgba(0,38,77,1) 80%, rgba(0,56,112,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000b1a', endColorstr='#003870', GradientType=0 );
+  
 }
