@@ -2,34 +2,46 @@ import React, {Component} from "react";
 import { withStyles } from '@material-ui/styles';
 
 const isStyles = ({
-    ul: {
-      height: '4em',
-      padding: '0 5em',
+    navbar: {
+      background: "rgba( 232, 237, 242, .7 )",
       display: 'flex',
+      flexDirection: 'row', 
+      justifyContent: 'center',
+    },
+    section: {
+      width: '70%',
+      height: '3em',
+      padding: '0 .5em',
+      display: 'flex',
+      flexDirection: 'row', 
+      justifyContent: 'space-between',
+      alignItems: 'center'
+    },
+    ul: {
+      width: '10em',
+      padding: '0 0 0 .5em',
       listStyle: 'none',
-      alignItems: 'center',
-      justifyContent: 'flex-end',
-      // background: 'linear-gradient(0deg, rgba(255,255,255,0.) 0%, rgba(0,0,0,0) 40%)'
-    },
-    brand: {
-      marginRight: 'auto',
-    },
-    li: {
-      margin: '0 2em',
-    },
+      display: 'flex',
+      flexDirection: 'row', 
+      justifyContent: 'space-between',
+    }
   });
 
 class Navbar extends Component {
     render() {
         const { classes } = this.props;
         return (
-            <div>
+          <div>
+            <nav className= { classes.navbar } >
+              <section className= { classes.section } >
+                <span className= { classes.brand }> Magame </span>
                 <ul className= { classes.ul } >
-                    <li className= { classes.brand }> Magame </li>
                     <li className= { classes.li }> dsada </li>
                     <li className= { classes.li }> dassd </li>
                 </ul>
-            </div>
+              </section>
+            </nav>
+          </div>
         );
     };
 };
